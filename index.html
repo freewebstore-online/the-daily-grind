@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The Daily Grind — your favourite local spot" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>The Daily Grind</title></head>
+<body class="font-[Inter,system-ui,sans-serif] antialiased bg-amber-950 text-amber-50">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-amber-950/90 backdrop-blur border-b border-amber-900/50">
+    <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
+      <a href="#" class="font-['Playfair_Display',Georgia,serif] font-bold text-xl">The Daily Grind</a>
+      <button class="md:hidden p-2" aria-label="Menu" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <div class="hidden md:flex gap-8">
+        <a href="#about" class="text-amber-200/70 hover:text-amber-100 text-sm font-medium transition-colors">Our Story</a>
+        <a href="#menu" class="text-amber-200/70 hover:text-amber-100 text-sm font-medium transition-colors">Menu</a>
+        <a href="#testimonials" class="text-amber-200/70 hover:text-amber-100 text-sm font-medium transition-colors">Reviews</a>
+        <a href="#contact" class="text-amber-200/70 hover:text-amber-100 text-sm font-medium transition-colors">Visit</a>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden px-6 py-4 space-y-3">
+      <a href="#about" class="block text-amber-200/70 hover:text-amber-100 text-sm font-medium">Our Story</a>
+      <a href="#menu" class="block text-amber-200/70 hover:text-amber-100 text-sm font-medium">Menu</a>
+      <a href="#testimonials" class="block text-amber-200/70 hover:text-amber-100 text-sm font-medium">Reviews</a>
+      <a href="#contact" class="block text-amber-200/70 hover:text-amber-100 text-sm font-medium">Visit</a>
+    </div>
+  </nav>
+
+  <section class="min-h-[80vh] flex items-center justify-center text-center px-6 pt-24 pb-16 bg-gray-950 text-white">
+    <div class="max-w-3xl relative">
+      
+      <p class="text-amber-600 font-medium text-sm tracking-[0.3em] uppercase mb-6">Welcome to</p>
+      <h1 class="font-['Playfair_Display',Georgia,serif] text-5xl sm:text-6xl lg:text-8xl font-extrabold leading-[1.05] mb-4 relative">The Daily Grind</h1>
+      <div class="w-20 h-0.5 bg-amber-500 mx-auto my-6"></div>
+      <p class="text-lg sm:text-xl text-gray-500 dark:text-gray-400 mb-10 max-w-lg mx-auto leading-relaxed">Your neighbourhood coffee shop — where every visit feels like coming home.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#menu" class="group px-8 py-4 bg-amber-600 hover:bg-amber-500 text-white font-semibold rounded-full transition-all hover:shadow-lg hover:shadow-amber-600/25 text-center">
+          See Our Menu <span class="inline-block transition-transform group-hover:translate-x-1">→</span>
+        </a>
+        <a href="#contact" class="px-8 py-4 border border-gray-300 dark:border-gray-600 hover:border-amber-500 hover:text-amber-600 font-semibold rounded-full transition-all text-center">Find Us</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-20 px-6">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div>
+          <p class="text-amber-600 font-medium text-xs tracking-[0.2em] uppercase mb-3">Our Story</p>
+          <h2 class="font-['Playfair_Display',Georgia,serif] text-3xl sm:text-4xl font-bold mb-6 leading-tight">Where Every Meal<br/>Becomes a Memory</h2>
+          <p class="text-gray-500 dark:text-gray-400 text-lg leading-relaxed mb-4">Born from a love of great coffee and warm conversation, we've created a space where quality meets community. Every item is made with care, every visit feels personal.</p>
+          <p class="text-gray-500 dark:text-gray-400 leading-relaxed">We source locally, bake daily, and believe the best things in life are shared over good food and drink.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-amber-50 dark:bg-amber-950/20 rounded-2xl p-6 text-center hover:scale-105 transition-transform">
+            <p class="text-3xl font-bold text-amber-600">6am</p>
+            <p class="text-xs text-gray-500 mt-1">Doors Open</p>
+          </div>
+          <div class="bg-amber-50 dark:bg-amber-950/20 rounded-2xl p-6 text-center hover:scale-105 transition-transform">
+            <p class="text-3xl font-bold text-amber-600">4.9</p>
+            <p class="text-xs text-gray-500 mt-1">Star Rating</p>
+          </div>
+          <div class="bg-amber-50 dark:bg-amber-950/20 rounded-2xl p-6 text-center hover:scale-105 transition-transform">
+            <p class="text-3xl font-bold text-amber-600">100%</p>
+            <p class="text-xs text-gray-500 mt-1">House-made</p>
+          </div>
+          <div class="bg-amber-50 dark:bg-amber-950/20 rounded-2xl p-6 text-center hover:scale-105 transition-transform">
+            <p class="text-3xl font-bold text-amber-600">50K+</p>
+            <p class="text-xs text-gray-500 mt-1">Cups Served</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="py-20 px-6 bg-gray-50 dark:bg-gray-900">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="text-amber-600 font-medium text-xs tracking-[0.2em] uppercase mb-3">Taste</p>
+        <h2 class="font-['Playfair_Display',Georgia,serif] text-3xl sm:text-4xl font-bold mb-3">Our Menu</h2>
+        <p class="text-gray-500 dark:text-gray-400 text-sm">Seasonal selections — menu changes with what's fresh</p>
+      </div>
+      <div class="space-y-8">
+        <div class="group flex items-start gap-4 pb-6 border-b border-gray-100 dark:border-gray-800 hover:border-amber-200 dark:hover:border-amber-800 transition-colors">
+          <div class="flex-1 min-w-0">
+            <div class="flex items-baseline gap-2">
+              <h3 class="font-semibold text-lg group-hover:text-amber-600 transition-colors">Flat White</h3>
+              <div class="flex-1 border-b border-dotted border-gray-200 dark:border-gray-700 mb-1.5 hidden sm:block"></div>
+              <span class="text-amber-600 font-bold text-lg shrink-0">$5.50</span>
+            </div>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Double ristretto, silky microfoam</p>
+          </div>
+        </div>
+        <div class="group flex items-start gap-4 pb-6 border-b border-gray-100 dark:border-gray-800 hover:border-amber-200 dark:hover:border-amber-800 transition-colors">
+          <div class="flex-1 min-w-0">
+            <div class="flex items-baseline gap-2">
+              <h3 class="font-semibold text-lg group-hover:text-amber-600 transition-colors">Pour Over</h3>
+              <div class="flex-1 border-b border-dotted border-gray-200 dark:border-gray-700 mb-1.5 hidden sm:block"></div>
+              <span class="text-amber-600 font-bold text-lg shrink-0">$7</span>
+            </div>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Single origin, hand-brewed to order</p>
+          </div>
+        </div>
+        <div class="group flex items-start gap-4 pb-6 border-b border-gray-100 dark:border-gray-800 hover:border-amber-200 dark:hover:border-amber-800 transition-colors">
+          <div class="flex-1 min-w-0">
+            <div class="flex items-baseline gap-2">
+              <h3 class="font-semibold text-lg group-hover:text-amber-600 transition-colors">Avocado Toast</h3>
+              <div class="flex-1 border-b border-dotted border-gray-200 dark:border-gray-700 mb-1.5 hidden sm:block"></div>
+              <span class="text-amber-600 font-bold text-lg shrink-0">$16</span>
+            </div>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Sourdough, smashed avo, poached eggs, dukkah</p>
+          </div>
+        </div>
+        <div class="group flex items-start gap-4 pb-6 border-b border-gray-100 dark:border-gray-800 hover:border-amber-200 dark:hover:border-amber-800 transition-colors">
+          <div class="flex-1 min-w-0">
+            <div class="flex items-baseline gap-2">
+              <h3 class="font-semibold text-lg group-hover:text-amber-600 transition-colors">Banana Bread</h3>
+              <div class="flex-1 border-b border-dotted border-gray-200 dark:border-gray-700 mb-1.5 hidden sm:block"></div>
+              <span class="text-amber-600 font-bold text-lg shrink-0">$8</span>
+            </div>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">House-baked, toasted with butter</p>
+          </div>
+        </div>
+      </div>
+      <p class="text-center text-xs text-gray-400 mt-8 italic">Please inform your server of any dietary requirements or allergies</p>
+    </div>
+  </section>
+
+  <section id="testimonials" class="py-20 px-6">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="text-amber-600 font-medium text-xs tracking-[0.2em] uppercase mb-3">What People Say</p>
+        <h2 class="font-['Playfair_Display',Georgia,serif] text-3xl sm:text-4xl font-bold">Guest Reviews</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white dark:bg-gray-950 rounded-2xl p-6 border border-gray-100 dark:border-gray-800 hover:shadow-lg transition-shadow">
+          <div class="flex gap-1 text-amber-500 mb-4">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4 italic">"The best coffee in the neighbourhood. The atmosphere is so cozy and the pastries are to die for."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center text-amber-600 text-xs font-bold">SM</div>
+            <div><p class="text-xs font-semibold">Sarah M.</p><p class="text-[10px] text-gray-400">Regular Guest</p></div>
+          </div>
+        </div>
+        <div class="bg-white dark:bg-gray-950 rounded-2xl p-6 border border-gray-100 dark:border-gray-800 hover:shadow-lg transition-shadow">
+          <div class="flex gap-1 text-amber-500 mb-4">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4 italic">"My go-to spot every morning. The staff remembers my order and always has a smile."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center text-amber-600 text-xs font-bold">JT</div>
+            <div><p class="text-xs font-semibold">James T.</p><p class="text-[10px] text-gray-400">via Google</p></div>
+          </div>
+        </div>
+        <div class="bg-white dark:bg-gray-950 rounded-2xl p-6 border border-gray-100 dark:border-gray-800 hover:shadow-lg transition-shadow">
+          <div class="flex gap-1 text-amber-500 mb-4">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4 italic">"Finally, a place that takes their craft seriously. The pour-over is exceptional."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center text-amber-600 text-xs font-bold">AL</div>
+            <div><p class="text-xs font-semibold">Anna L.</p><p class="text-[10px] text-gray-400">via TripAdvisor</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 px-6 bg-gray-50 dark:bg-gray-900">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="text-amber-600 font-medium text-xs tracking-[0.2em] uppercase mb-3">Come Visit</p>
+        <h2 class="font-['Playfair_Display',Georgia,serif] text-3xl sm:text-4xl font-bold">Find Us</h2>
+      </div>
+      <div class="grid md:grid-cols-5 gap-10">
+        <div class="md:col-span-2 space-y-6">
+          <!-- Hours -->
+          <div class="bg-amber-50 dark:bg-amber-950/20 rounded-2xl p-6">
+            <h3 class="font-bold text-sm mb-4 text-amber-800 dark:text-amber-300">Opening Hours</h3>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between"><span class="text-gray-500">Monday</span><span class="font-medium">6am – 4pm</span></div>
+              <div class="flex justify-between"><span class="text-gray-500">Tue – Fri</span><span class="font-medium">6am – 5pm</span></div>
+              <div class="flex justify-between"><span class="text-gray-500">Saturday</span><span class="font-medium">7am – 5pm</span></div>
+              <div class="flex justify-between"><span class="text-gray-500">Sunday</span><span class="font-medium">7am – 3pm</span></div>
+            </div>
+          </div>
+          <!-- Contact info -->
+          <div class="space-y-3">
+            <div class="flex items-center gap-3">
+              <span class="w-8 h-8 bg-amber-100 dark:bg-amber-900/30 rounded-lg flex items-center justify-center text-amber-600 text-sm shrink-0">&#9742;</span>
+              <span class="text-sm">(555) 123-4567</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="w-8 h-8 bg-amber-100 dark:bg-amber-900/30 rounded-lg flex items-center justify-center text-amber-600 text-sm shrink-0">&#9993;</span>
+              <span class="text-sm">hello@example.com</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="w-8 h-8 bg-amber-100 dark:bg-amber-900/30 rounded-lg flex items-center justify-center text-amber-600 text-sm shrink-0">&#9873;</span>
+              <span class="text-sm">123 Main Street, Your City</span>
+            </div>
+          </div>
+        </div>
+        <div class="md:col-span-3">
+          <form class="fws-contact-form space-y-4">
+          <input type="text" name="name" placeholder="Your name" required class="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 placeholder-gray-400 focus:outline-none focus:border-blue-400 focus:ring-1 focus:ring-blue-400" />
+          <input type="email" name="email" placeholder="Your email" required class="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 placeholder-gray-400 focus:outline-none focus:border-blue-400 focus:ring-1 focus:ring-blue-400" />
+          <input type="tel" name="phone" placeholder="Phone (optional)" class="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 placeholder-gray-400 focus:outline-none focus:border-blue-400 focus:ring-1 focus:ring-blue-400" />
+          <textarea name="message" rows="4" placeholder="Your message" required class="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-xl bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 placeholder-gray-400 focus:outline-none focus:border-blue-400 focus:ring-1 focus:ring-blue-400 resize-none"></textarea>
+          <input type="text" name="website" class="hidden" tabindex="-1" autocomplete="off" />
+          <button type="submit" class="w-full px-8 py-3.5 bg-amber-600 hover:bg-amber-700 text-white font-semibold rounded-xl transition-colors">Send Message</button>
+          <p class="fws-form-status"></p>
+        </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-amber-950 border-t border-amber-900/50 py-8 px-6 text-center text-sm text-amber-300/50">
+
+
+    <p>&copy; 2026 The Daily Grind. All rights reserved.</p>
+    <div class="flex justify-center gap-6 mt-3">
+      <a href="pages/privacy.html" class="hover:opacity-75 transition-opacity">Privacy Policy</a>
+      <a href="pages/terms.html" class="hover:opacity-75 transition-opacity">Terms of Service</a>
+    </div>
+    <p class="mt-3 text-xs opacity-60">
+      <a href="https://freewebstore.online" target="_blank" rel="noopener noreferrer" class="hover:underline">
+        Made with FreeWebStore
+      </a>
+    </p>
+  </footer>
+
+</body>
+</html>
